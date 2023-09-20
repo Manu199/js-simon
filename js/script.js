@@ -20,9 +20,17 @@ console.log(randomNumbers);
 
 
 // - stampare i 5 numeri in pagina e far partire un timer di 5 secondi
-
 document.getElementById('output').innerHTML = randomNumbers.join(' - ');
 
+
 // - dopo i 5 secondi far scomparire dalla pagina 
+setTimeout(function () {
+  document.getElementById('output').innerHTML = ('  ');
+}, 5000);
+console.log(setTimeout);
+
+
 // - aprire un prompt e chiedere all'utente di inserire i numeri visualizzati prima
+
+prompt
 // - comparare i numeri inseriti con quelli generati e stampare quali e quanti numeri sono stati indovinati correttamente.
